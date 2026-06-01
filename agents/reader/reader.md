@@ -81,7 +81,7 @@ Case type: <slp-civil | slp-criminal | writ-art32 | transfer-petition | review-p
 1. **Glob** the case folder for input files. Skip `~$*` (Word lock files), skip prior agent outputs (`case-facts.md`, `format-shell.md`, `draft-v*.docx`, `verification-report.md`, `opposing-notes.md`).
 
 2. **For each input document:**
-   a. Create a working copy under `~/.claude/working-copies/<case-name>/` per the working-copy rule.
+   a. Create a working copy under `<case-folder>/_working-copies/<case-name>/` per the working-copy rule.
    b. Convert `.docx` → text via `textutil -convert txt` (on the copy).
    c. Convert `.pdf` → text via `pdftotext` or read directly via Read tool's PDF support (20 pages at a time if large).
    d. Identify document type by content cues (court letterheads, document headings: "JUDGMENT", "ORDER", "FIRST INFORMATION REPORT", "MEMO OF APPEAL", "SPECIAL LEAVE PETITION", etc.).

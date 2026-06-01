@@ -30,7 +30,7 @@ This file is referenced from every drafting skill in the `supreme-court-drafting
 
 6.1. **🔴 WORKING-COPY RULE — never operate on originals.**
    When an agent needs to convert / extract / transform an existing case file, it MUST:
-   - Create a working subfolder: `~/.claude/working-copies/<case-name>/` (NOT inside the case folder)
+   - Create a working subfolder: `<case-folder>/_working-copies/<case-name>/` (NOT inside the case folder)
    - Copy the original file there
    - Operate on the COPY only
    - Output produced in working-copies/ or /tmp/, never in the original case folder unless it's a final draft artifact
