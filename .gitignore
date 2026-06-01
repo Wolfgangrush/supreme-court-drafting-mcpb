@@ -1,0 +1,34 @@
+# MCPB build artifacts
+*.mcpb
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Editor lockfiles
+~$*
+*.swp
+*.swo
+
+# Backups from propagation
+*.bak-v*
+server/main.py.bak-*
+
+# Test case folders (should never be in repo)
+inputs/
+*-bench-config-*/
+*-state-config-*/
+
+# Local-only secrets (defence in depth — no secrets expected here)
+.env
+.env.local
+*.key
+*.pem
