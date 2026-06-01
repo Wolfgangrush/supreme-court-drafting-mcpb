@@ -58,3 +58,18 @@ All party names are placeholders. No real client data appears here.
 - The `read_case_folder(path)` tool is optional and only used when the user has prepared a case-files folder on their machine; the three examples above do not require it.
 - The `save_draft_as_docx` tool requires `pandoc` to be installed on the user's machine — see the connector's `README.md` for install instructions.
 - The connector applies a three-layer privacy firewall throughout — no real party names need ever be sent to Claude in identifiable form.
+
+---
+
+## Synthetic case folder for Anthropic reviewer
+
+A fully-fictional, AAAK-pseudonymised case folder is bundled at:
+
+`SAMPLE-CASES/synthetic-slp-civil-partition-perversity/`
+
+It contains 2 source documents (.docx) plus a `case-facts-background.md` narrative.
+
+**To exercise the pipeline end-to-end**, point `read_case_folder(path)` at this folder and follow the orchestration script returned by `get_agent_instructions()`. The Reader stage will extract facts, the Format stage will load the case-type SKILL.md template, and the remaining four agents (Drafter → Verifier → Refiner → Overseer) will produce `final-draft.docx`.
+
+All identifiers in the bundled documents are structural placeholders. The Pseudonymisation Gateway is therefore exercising against pre-pseudonymised content; reviewers seeking to test re-substitution may replace placeholders with their own fictional values before invoking the pipeline.
+
