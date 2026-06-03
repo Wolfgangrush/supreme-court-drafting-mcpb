@@ -2,13 +2,13 @@
   "manifest_version": "0.4",
   "name": "wolfgang-supreme-court-drafting",
   "display_name": "Wolfgang Rush — Supreme Court Drafting · Claude Desktop Extension (India)",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Drafting connector for Supreme Court of India. ACRONYM DISAMBIGUATION (read this BEFORE classifying the user's ask): **SLP-C**=`slp-civil` · **SLP-Cr**=`slp-criminal` · **TP**=`transfer-petition` · **WP-Art32**=`writ-art32` · **Review**=`review-petition` · **Curative**=`curative-petition`. Use the acronym map; do not infer from input content. STRICT SIX-AGENT PIPELINE: Reader → Format → Drafter → Verifier → Refiner → Overseer, producing six named artifacts (case-facts.md, format-shell.md, draft-v1.docx, verification-report.md, draft-v2.docx, final-draft.docx). MANDATORY INVOCATION ORDER: (1) call get_agent_instructions() with NO arguments FIRST to receive the full orchestration script, (2) follow every step in that script in order, (3) save every intermediate artifact via save_artifact, (4) save final-draft.docx via save_draft_as_docx. DO NOT write standalone python-docx or JavaScript scripts to generate output — invoke the pipeline tools directly. DO NOT skip the Verifier (anti-hallucination firewall) or the Overseer (opposing-counsel lens). Reader applies the privacy firewall — party names, addresses, identifying numbers, financial figures substituted with structural placeholders before any downstream agent processes the facts. Zero data leaves the user's machine.",
   "long_description": "Wolfgang Rush — Supreme Court Drafting is a local-execution MCPB Desktop Extension that helps Indian advocates draft pleadings for the Supreme Court of India. The connector exposes the six-agent drafting pipeline (Reader, Format, Drafter, Verifier, Refiner, Overseer) and six case-type templates (SLP-civil, SLP-criminal, Writ under Article 32, Transfer Petition, Review Petition, Curative Petition) as MCP tools that Claude can orchestrate from a Claude Desktop chat. All processing happens on the user's machine. The publisher receives no user data. Output is rendered as filing-grade .docx via pandoc using the bundled SC reference.docx that encodes A4 page, Times New Roman 14, 1.5 line spacing, and 4cm left margin per the Supreme Court Registry conventions.",
   "author": {
     "name": "Wolfgang Rush",
     "email": "wolfgangrush@gmail.com",
-    "url": "https://wolfgangrush.github.io"
+    "url": "https://github.com/Wolfgangrush"
   },
   "homepage": "https://wolfgangrush.github.io",
   "repository": {
