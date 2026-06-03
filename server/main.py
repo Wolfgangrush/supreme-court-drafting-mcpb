@@ -200,6 +200,65 @@ JavaScript script, or any one-shot drafting program. The MCPB exposes every
 required tool. Use them.
 """
 
+@mcp.tool(annotations=ToolAnnotations(title="List Available Case Types", readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=False))
+def list_case_types() -> dict:
+    """List all case types this connector can draft.
+
+    Returns a dict with the list of case types, a short description of each,
+    AND an acronym disambiguation map (Indian advocacy acronyms / Form
+    references / statutory section references -> case_type).
+
+    CRITICAL: the user's acronym IS the source of truth for case_type
+    classification. Do not infer case_type from input-document content.
+    """
+    return {
+        "case_types": CASE_TYPES,
+        "descriptions": CASE_TYPE_DESCRIPTIONS,
+        "acronym_to_case_type": ACRONYM_TO_CASE_TYPE,
+        "note": "Call get_case_type_format(case_type) for the full drafting skill.",
+    }
+
+
+@mcp.tool(annotations=ToolAnnotations(title="Get Case Type Drafting Format", readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=False))
+def get_case_type_format(case_type: str) -> str:
+    """Get the drafting format SKILL.md for a given case type.
+
+    Returns the full SKILL.md content for the case type, including statutory
+    anchors, format placeholders, and the drafting checklist. Also appends
+    format-from-user.md if present in the same skill folder.
+
+    Args:
+        case_type: One of the slugs returned by list_case_types().
+    """
+    if case_type not in CASE_TYPES:
+        return (
+            f"Error: unknown case_type '{case_type}'. "
+            f"Available: {', '.join(CASE_TYPES)}. "
+            "Call list_case_types() for descriptions."
+        )
+
+    skill_dir = SKILLS_DIR / f"{case_type}-draft"
+    skill_md = skill_dir / "SKILL.md"
+    format_from_user = skill_dir / "format-from-user.md"
+
+    if not skill_md.exists():
+        return f"Error: skill file not found for case_type '{case_type}'."
+
+    parts = ["# Case-type skill: " + case_type, "", skill_md.read_text(encoding="utf-8")]
+    if format_from_user.exists():
+        parts.extend(
+            [
+                "",
+                "---",
+                "",
+                "# Format expected from user (case-type checklist)",
+                "",
+                format_from_user.read_text(encoding="utf-8"),
+            ]
+        )
+    return "\n".join(parts)
+
+
 
 @mcp.tool(annotations=ToolAnnotations(title="Get Pipeline Agent Instructions", readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=False))
 def get_agent_instructions(agent_name: str = "") -> str:
