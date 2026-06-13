@@ -1,6 +1,6 @@
 # format-from-user.md — SLP (Civil) · canonical drafting baseline
 
-**Status:** Pre-populated with the validated Bombay HC Nagpur drafting style adapted for Supreme Court conventions. Adapt for your AOR practice if needed. **Drafter will use this baseline if you do not customize.**
+**Status:** Pre-populated with the validated Bombay HC drafting style adapted for Supreme Court conventions. Adapt for your AOR practice if needed. **Drafter will use this baseline if you do not customize.**
 
 Style is not copyrighted; only verbatim drafted prose is. The baseline below reflects standard Indian legal-drafting conventions at the Supreme Court of India.
 

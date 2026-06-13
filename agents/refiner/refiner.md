@@ -61,7 +61,7 @@ Apply every flag from `verification-report.md` to `draft-v1.md`, polish language
     - A4 paper, one-side print.
     - Times New Roman 14pt body, 1.5 line spacing.
     - 4 cm left margin (binding side), 2.5 cm top / bottom / right.
-    - Section headers: Title Case, bold. NOT spaced (`F A C T S` is HC Nagpur convention; SC uses `Statement of Facts`).
+    - Section headers: Title Case, bold. NOT spaced (`F A C T S` is HC [bench city] convention; SC uses `Statement of Facts`).
     - Page numbers centred at bottom; continuous pagination from main petition through annexures.
     - Annexure marker style: `ANNEXURE P-1`, `ANNEXURE P-2 (COLLY)`, etc.
 

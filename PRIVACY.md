@@ -1,6 +1,6 @@
 # Privacy Policy
 
-This connector follows the canonical Wolfgang Rush privacy policy.
+This connector follows the canonical wolfgang_rush privacy policy.
 
 **Full text:** <https://wolfgangrush.github.io/privacy/>
 
@@ -12,7 +12,7 @@ This connector follows the canonical Wolfgang Rush privacy policy.
 - **Third-party sharing:** none
 - **Data retention:** none
 
-All processing happens on the user's machine. The Publisher (Wolfgang Rush) never receives any user data.
+All processing happens on the user's machine. The Publisher (wolfgang_rush) never receives any user data.
 
 ## Claude memory · chat history · uploaded files
 

@@ -5,7 +5,7 @@ description = "MCPB Desktop Extension for drafting pleadings before the Supreme 
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Wolfgang Rush", email = "wolfgangrush@gmail.com" }
+    { name = "Rushikesh R. Mahajan (wolfgang_rush)", email = "wolfgangrush@gmail.com" }
 ]
 dependencies = [
     "mcp[cli]>=1.0.0"

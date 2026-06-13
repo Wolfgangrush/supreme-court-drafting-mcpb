@@ -1,7 +1,7 @@
-# Dependency Audit — Wolfgang Rush MCPB Family
+# Dependency Audit — wolfgang_rush MCPB Family
 
 **Audit date:** 2026-06-01
-**Auditor:** Publisher (Wolfgang Rush)
+**Auditor:** Publisher (wolfgang_rush)
 **Scope:** All 14 MCPB Desktop Extensions in this family.
 
 This file is the family-level dependency-currency attestation referenced by each plugin's `SECURITY.md` ("Dependencies" section) for Anthropic Software Directory Policy clause 5G compliance.

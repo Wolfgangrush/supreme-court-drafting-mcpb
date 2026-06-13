@@ -1,4 +1,4 @@
-# Wolfgang Rush — Supreme Court Drafting
+# wolfgang_rush — Supreme Court Drafting
 
 **MCPB Desktop Extension** for drafting pleadings before the Supreme Court of India.
 
@@ -11,7 +11,7 @@ Designed for Indian advocates using **Claude Desktop App**. Local-execution. Zer
 
 ## What this connector does
 
-Exposes the Wolfgang Rush six-agent SC drafting pipeline as MCP tools that Claude can orchestrate from a Claude Desktop chat. Drafts the following case types:
+Exposes the wolfgang_rush six-agent SC drafting pipeline as MCP tools that Claude can orchestrate from a Claude Desktop chat. Drafts the following case types:
 
 | Case type | Statutory anchor |
 |---|---|
@@ -72,7 +72,7 @@ Claude will:
 
 ## Privacy
 
-This connector collects **zero** user data. All processing happens on the user's machine. The publisher (Wolfgang Rush) never receives any user data.
+This connector collects **zero** user data. All processing happens on the user's machine. The publisher (wolfgang_rush) never receives any user data.
 
 The connector applies a three-layer privacy firewall recommended for all case-folder work:
 - **L1 substitution** — real party names, case numbers, financial figures replaced with neutral placeholders before any text is sent to Claude
@@ -122,7 +122,7 @@ This is the connector's contribution to your **Section 8(5) DPDP Act 2023** safe
 
 ## ⚖️ DPDP Act 2023 — what this means for you
 
-**Publisher position.** Wolfgang Rush, in its capacity as software publisher, is **neither a Data Fiduciary nor a Data Processor** under the DPDP Act 2023 in respect of this connector. The connector runs entirely on your machine. There is no Wolfgang Rush server, no telemetry, no API endpoint that the publisher controls. Section 2(i) requires "determining purpose and means of processing" — Wolfgang Rush determines neither.
+**Publisher position.** wolfgang_rush, in its capacity as software publisher, is **neither a Data Fiduciary nor a Data Processor** under the DPDP Act 2023 in respect of this connector. The connector runs entirely on your machine. There is no wolfgang_rush server, no telemetry, no API endpoint that the publisher controls. Section 2(i) requires "determining purpose and means of processing" — wolfgang_rush determines neither.
 
 **User position.** You — the advocate using this connector — are the **Data Fiduciary** for your own client's personal data. This was true before installing the connector and remains true after. Your obligations under Sections 4, 5, 6, 8, 9, 11, 13 of the DPDP Act 2023 continue independent of this connector.
 
@@ -162,7 +162,7 @@ MIT. See LICENSE.
 
 ## Publisher
 
-**Wolfgang Rush** — independent open-source legal-tech publisher. Contact: wolfgangrush@gmail.com
+**wolfgang_rush** — independent open-source legal-tech publisher. Contact: wolfgangrush@gmail.com
 
 ## Source
 

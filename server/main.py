@@ -1,11 +1,11 @@
-"""Wolfgang Rush — Supreme Court Drafting MCPB.
+"""wolfgang_rush — Supreme Court Drafting MCPB.
 
 Local-execution MCPB Desktop Extension for the Supreme Court of India. Exposes
 the six-agent SC drafting pipeline and six case-type drafting templates as MCP
 tools that Claude can orchestrate from a Claude Desktop chat.
 
 Privacy posture: zero data collection. All processing happens on the user's
-machine. The publisher (Wolfgang Rush) never receives any user data.
+machine. The publisher (wolfgang_rush) never receives any user data.
 
 License: MIT
 Source: https://github.com/Wolfgangrush/supreme-court-drafting-mcpb
@@ -81,7 +81,7 @@ ACRONYM_TO_CASE_TYPE: dict[str, str] = {
 }
 
 
-FULL_ORCHESTRATION_SCRIPT = """# WOLFGANG RUSH — SUPREME COURT OF INDIA DRAFTING · FULL ORCHESTRATION SCRIPT
+FULL_ORCHESTRATION_SCRIPT = """# wolfgang_rush — SUPREME COURT OF INDIA DRAFTING · FULL ORCHESTRATION SCRIPT
 
 **YOU MUST execute every step below in order. DO NOT skip steps. DO NOT write
 standalone python-docx, JavaScript, or shell scripts to generate output —
@@ -503,7 +503,7 @@ def create_case_folder(case_type: str, base_dir: str = "") -> dict:
     inputs_folder.mkdir(parents=True, exist_ok=True)
     readme = case_folder / "README.md"
     readme.write_text(
-        f"# Wolfgang Rush Drafting Case Folder\n\n"
+        f"# wolfgang_rush Drafting Case Folder\n\n"
         f"- Case type: {case_type}\n"
         f"- Created: {datetime.now().isoformat(timespec='seconds')}\n\n"
         f"## Artifacts (pipeline output)\n"

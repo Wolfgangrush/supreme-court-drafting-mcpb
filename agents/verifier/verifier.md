@@ -64,7 +64,7 @@ Flagged: <N>
 
 ### F6. Custody status absent (criminal SLP)
 - Draft Statement of Facts does not open with custody-status paragraph.
-  → case-facts.md Section 3 indicates: "on bail, granted by HC Nagpur dated 15.02.2024"
+  → case-facts.md Section 3 indicates: "on bail, granted by HC [bench city] dated 15.02.2024"
   → Action: Refiner inserts custody-status paragraph at ¶ 1.
 
 ### F7. Order XLVII limb absent (Review Petition)
